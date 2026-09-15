@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="EarthLink Authorized Retailer — fiber, 5G home and satellite internet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#fff4e4"/>
+    </linearGradient>
+    <linearGradient id="o" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb454"/><stop offset="1" stop-color="#e2760f"/>
+    </linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#f58b21" stop-opacity=".38"/><stop offset="1" stop-color="#f58b21" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1010" cy="150" r="360" fill="url(#glow)"/>
+
+  <!-- brand lockup -->
+  <g transform="translate(80,84)">
+    <g fill="none" stroke="url(#o)" stroke-width="5" stroke-linecap="round">
+      <ellipse cx="26" cy="26" rx="24" ry="12" transform="rotate(-24 26 26)"/>
+    </g>
+    <circle cx="42" cy="12" r="6.4" fill="url(#o)"/>
+    <text x="66" y="38" font-family="Montserrat, Arial, sans-serif" font-size="40" font-weight="800" fill="#53555a">EarthLink</text>
+    <text x="300" y="26" font-family="Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2" fill="#e2760f">AUTHORIZED</text>
+    <text x="300" y="45" font-family="Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="2" fill="#53555a">RETAILER</text>
+  </g>
+
+  <!-- headline -->
+  <g transform="translate(80,230)" font-family="Montserrat, Arial, sans-serif" fill="#202127">
+    <text font-size="72" font-weight="800">Home internet that&#39;s</text>
+    <text y="86" font-size="72" font-weight="800"><tspan fill="#e2760f">fast, fair</tspan> &amp; simple.</text>
+  </g>
+  <text x="80" y="440" font-family="Arial, sans-serif" font-size="27" fill="#5f636c">Fiber up to 5&#160;Gig&#160;&#160;·&#160;&#160;Wireless 5G Home&#160;&#160;·&#160;&#160;Satellite&#160;&#160;·&#160;&#160;Unlimited data</text>
+
+  <!-- pills -->
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    <rect x="80" y="486" width="250" height="58" rx="29" fill="url(#o)"/>
+    <text x="205" y="523" fill="#fff" text-anchor="middle">Check availability</text>
+    <rect x="348" y="486" width="230" height="58" rx="29" fill="#fff" stroke="#e6e8eb" stroke-width="2"/>
+    <text x="463" y="523" fill="#202127" text-anchor="middle">(855) 555-0100</text>
+  </g>
+
+  <!-- orbit art -->
+  <g transform="translate(980,360)">
+    <g fill="none" stroke="#f58b21" stroke-opacity=".28" stroke-width="2">
+      <ellipse cx="0" cy="0" rx="200" ry="90" transform="rotate(-18)"/>
+      <ellipse cx="0" cy="0" rx="150" ry="200" transform="rotate(-18)"/>
+    </g>
+    <path d="M0 -96l60 22v46c0 40-34 62-60 72-26-10-60-32-60-72v-46z" fill="url(#o)"/>
+    <path d="M-24 4l16 16 34-36" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Native browser scrolling only — no smooth-scroll library, no scroll hijacking. */
+  }
+
+  body {
+    @apply bg-white font-body text-ink antialiased;
+    /* Clears the sticky mobile call bar so it never covers page content. */
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      padding-bottom: 0;
+    }
+  }
+
+  /* Standard cursors only. No magnetic cursor, follower or spotlight anywhere. */
+  a,
+  button,
+  summary,
+  [role='button'] {
+    cursor: pointer;
+  }
+
+  /* iOS zooms the page when a focused input is under 16px. */
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  /* WCAG 2.5.8 exempts links inside prose; standalone links get their own affordance. */
+  :where(:not(p)) > a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-orange-600;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  /*
+   * Entrance reveal.
+   *
+   * The hidden initial state applies only when the `.js` class is present on
+   * <html>, which layout.tsx sets before paint. Without JavaScript the class is
+   * never added and every element renders visible — content is never gated
+   * behind an animation.
+   */
+  .js [data-reveal][data-shown='false'] {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  .js [data-reveal] {
+    transition:
+      opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .js [data-reveal][data-shown='true'] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Reduced motion: final states, immediately, on every effect. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .js [data-reveal],
+  .js [data-reveal][data-shown='false'] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

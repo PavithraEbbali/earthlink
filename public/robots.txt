@@ -1,0 +1,21 @@
+# EarthLink Authorized Retailer — robots
+User-agent: *
+Allow: /
+
+# Be explicit that major crawlers & AI answer engines are welcome (AEO/GEO)
+User-agent: Googlebot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://www.example-earthlink-retailer.com/sitemap.xml

@@ -1,0 +1,12 @@
+{
+  "name": "EarthLink Internet — Authorized Retailer",
+  "short_name": "EarthLink Retailer",
+  "description": "Order EarthLink Fiber, Wireless 5G Home Internet, and Satellite through an authorized retailer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f58b21",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

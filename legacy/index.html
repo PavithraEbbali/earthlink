@@ -1,0 +1,784 @@
+<!--
+  ============================================================================
+  EarthLink Authorized Retailer — one-page marketing site
+  ----------------------------------------------------------------------------
+  PLACEHOLDERS TO REPLACE before going live (see README.md):
+    • Skyline Connect LLC   -> your registered business / dealer legal name
+    • (855) 555-0100         -> your authorized-retailer sales line
+    • hello@skyline-connect.example -> your business email
+    • https://www.example-earthlink-retailer.com -> your live domain
+  This is an INDEPENDENT authorized retailer site. It is not operated by,
+  and its copy is written originally rather than copied from, EarthLink LLC.
+  ============================================================================
+-->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Marks JS as available so reveal-animations only hide content when they can also un-hide it.
+     Without JS this class is absent and every element renders fully visible (crawler / a11y safe). -->
+<script>document.documentElement.className += " js";</script>
+<title>EarthLink Internet Plans | Fiber, 5G Home &amp; Satellite — Authorized Retailer</title>
+<meta name="description" content="Order EarthLink Fiber, Wireless 5G Home Internet, and Satellite through an authorized retailer. Symmetrical fiber up to 5 Gig, unlimited data on qualifying plans, no annual contract on wireless, and friendly US-based support. Check availability at your address." />
+<meta name="theme-color" content="#f58b21" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="Skyline Connect LLC — Authorized EarthLink Retailer" />
+<link rel="canonical" href="https://www.example-earthlink-retailer.com/" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Skyline Connect — Authorized EarthLink Retailer" />
+<meta property="og:title" content="EarthLink Internet — Fiber, 5G Home &amp; Satellite | Authorized Retailer" />
+<meta property="og:description" content="Fast, fair, unlimited home internet from EarthLink, ordered through a local authorized retailer. Check availability at your address in seconds." />
+<meta property="og:url" content="https://www.example-earthlink-retailer.com/" />
+<meta property="og:image" content="https://www.example-earthlink-retailer.com/assets/img/og-image.svg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="EarthLink Internet — Authorized Retailer" />
+<meta name="twitter:description" content="Fiber, 5G Home Internet &amp; Satellite. Unlimited data on qualifying plans. Check availability now." />
+<meta name="twitter:image" content="https://www.example-earthlink-retailer.com/assets/img/og-image.svg" />
+
+<!-- Icons -->
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+<link rel="manifest" href="site.webmanifest" />
+
+<!-- Fonts: preconnect + display=swap for fast, shift-free loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" /></noscript>
+
+<link rel="stylesheet" href="assets/css/styles.css" />
+
+<!-- Structured data: Organization + WebSite + Service catalog + FAQ (SEO / AEO / GEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.example-earthlink-retailer.com/#retailer",
+      "name": "Skyline Connect LLC",
+      "alternateName": "Authorized EarthLink Retailer",
+      "url": "https://www.example-earthlink-retailer.com/",
+      "logo": "https://www.example-earthlink-retailer.com/assets/img/favicon.svg",
+      "description": "Independent authorized retailer of EarthLink internet services, including Fiber, Wireless 5G Home Internet, and Satellite.",
+      "telephone": "+1-855-555-0100",
+      "areaServed": "US",
+      "disambiguatingDescription": "Skyline Connect LLC is an independent authorized retailer. EarthLink is a registered trademark of its respective owner.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-855-555-0100",
+        "contactType": "sales",
+        "areaServed": "US",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.example-earthlink-retailer.com/#website",
+      "url": "https://www.example-earthlink-retailer.com/",
+      "name": "EarthLink Internet — Authorized Retailer",
+      "publisher": { "@id": "https://www.example-earthlink-retailer.com/#retailer" }
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Fiber Internet",
+      "provider": { "@id": "https://www.example-earthlink-retailer.com/#retailer" },
+      "name": "EarthLink Fiber Internet",
+      "description": "Symmetrical fiber internet with matching upload and download speeds from 100 Mbps up to 5 Gig, with unlimited data.",
+      "areaServed": "US",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "39.95",
+        "highPrice": "149.95",
+        "offerCount": "6"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.example-earthlink-retailer.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this the official EarthLink website?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Skyline Connect LLC is an independent, authorized retailer of EarthLink internet services. We help you compare and order EarthLink plans, but EarthLink LLC owns the EarthLink brand and provides the underlying network service." }
+        },
+        {
+          "@type": "Question",
+          "name": "What EarthLink internet options can I order here?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You can order EarthLink Fiber (100 Mbps to 5 Gig, symmetrical), Wireless 5G and fixed-wireless Home Internet, and Satellite internet for rural and hard-to-reach addresses. Availability depends on your service address." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does EarthLink Fiber have data caps?",
+          "acceptedAnswer": { "@type": "Answer", "text": "EarthLink Fiber plans include unlimited data with no overage fees. Wireless Home Internet plans include a monthly data allowance that varies by plan." }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast can I get connected?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Wireless Home Internet ships to your door and self-installs in roughly 15 minutes. Fiber typically requires a professional installation appointment. Timelines vary by address and product." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a contract?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Fiber and Satellite generally require a 12-month term agreement, while Wireless Home Internet is offered with no annual contract. Terms are confirmed before you place an order." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============================ TOP BAR ============================ -->
+<div class="topbar">
+  <div class="container">
+    <span class="topbar-note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12A10 10 0 1 1 12 2"/><path d="M22 4 12 14.01l-3-3"/></svg>
+      <span><strong>Authorized EarthLink&reg; Retailer</strong> <span class="hide-xs">&mdash; independent dealer, not EarthLink LLC</span></span>
+    </span>
+    <span class="topbar-note">
+      Ready to order? Call <a href="tel:+18555550100">(855)&nbsp;555-0100</a>
+    </span>
+  </div>
+</div>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a class="brand" href="#top" aria-label="EarthLink Authorized Retailer — home">
+      <!-- Brand lockup: orange orbit mark + EarthLink wordmark + retailer tag -->
+      <svg class="brand__logo" viewBox="0 0 232 40" role="img" aria-label="EarthLink">
+        <g fill="none" stroke="#f58b21" stroke-width="3.4" stroke-linecap="round">
+          <ellipse cx="20" cy="20" rx="17" ry="8.5" transform="rotate(-24 20 20)"/>
+        </g>
+        <circle cx="31.5" cy="12" r="4.4" fill="#f58b21"/>
+        <text x="46" y="28" font-family="Montserrat, sans-serif" font-size="24" font-weight="800" letter-spacing="-0.5" fill="#53555a">EarthLink</text>
+      </svg>
+      <span class="brand__tag">
+        <b>Authorized</b>
+        <span>Retailer</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#internet">Internet</a>
+      <a href="#plans">Plans</a>
+      <a href="#why">Why us</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn--ghost" href="tel:+18555550100" data-magnetic>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (855) 555-0100
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" aria-label="Home internet from EarthLink">
+    <!-- Immersive animated background: drifting gradient mesh + rotating conic bloom + dot grid + cursor spotlight -->
+    <div class="hero-bg" aria-hidden="true">
+      <span class="hero-gradient"></span>
+      <span class="hero-aurora"></span>
+      <div class="mesh-field" id="meshField">
+        <span class="mesh mesh-1"></span>
+        <span class="mesh mesh-2"></span>
+        <span class="mesh mesh-3"></span>
+        <span class="mesh mesh-4"></span>
+      </div>
+      <span class="hero-conic"></span>
+      <span class="hero-beam"></span>
+      <span class="hero-dots"></span>
+      <span class="hero-spot" id="heroSpot"></span>
+      <span class="hero-scrim"></span>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="badge-row" data-reveal>
+          <span class="badge badge--solid">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21l2.3-7.4-6-4.6h7.6z"/></svg>
+            Serving 96% of the U.S.
+          </span>
+          <span class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Unlimited data on fiber
+          </span>
+        </div>
+
+        <h1 class="h-xl reveal-words" data-reveal-words>
+          Home internet that&#39;s
+          <span class="text-grad">fast, fair</span>
+          &amp; refreshingly simple.
+        </h1>
+
+        <p class="lead" data-reveal data-reveal-delay="1">
+          Order <strong>EarthLink Fiber</strong>, <strong>Wireless&nbsp;5G Home Internet</strong>, and
+          <strong>Satellite</strong> through a local authorized retailer. Real symmetrical speeds,
+          honest pricing, unlimited data on qualifying plans, and friendly U.S.-based help from your
+          first question to final setup.
+        </p>
+
+        <div class="hero-cta" data-reveal data-reveal-delay="2">
+          <a class="btn btn--lg" href="#check" data-magnetic>
+            Check my address
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#plans">See plans &amp; pricing</a>
+        </div>
+
+        <div class="hero-proof" data-reveal data-reveal-delay="3">
+          <div class="stat"><b data-count="5" data-suffix=" Gig">5 Gig</b><span>Top fiber speed</span></div>
+          <div class="stat"><b data-count="15" data-suffix=" min">15 min</b><span>Wireless self-setup</span></div>
+          <div class="stat"><b data-count="0" data-prefix="$" data-suffix=" caps">$0 caps</b><span>Unlimited fiber data</span></div>
+        </div>
+      </div>
+
+      <!-- Hero visual: the living "EarthLink globe" — a rotating 3D dot-Earth (canvas, computed
+           per frame) with glowing connection routes, travelling data packets, and an orbiting
+           satellite that echoes the EarthLink logo mark. Interactive: the mouse tilts the scene
+           and steers the globe's spin. Decorative, so aria-hidden. -->
+      <div class="hero-visual" data-reveal data-reveal-delay="1">
+        <div class="globe-scene" id="heroScene" aria-hidden="true">
+          <span class="globe-halo"></span>
+          <canvas class="globe-canvas" id="globeCanvas" width="640" height="640"></canvas>
+
+          <svg class="globe-arcs" viewBox="0 0 640 640" fill="none" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="arcG" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#f58b21" stop-opacity="0"/>
+                <stop offset=".5" stop-color="#ffb454" stop-opacity="1"/>
+                <stop offset="1" stop-color="#f58b21" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+
+            <!-- connection routes across the visible hemisphere -->
+            <g class="arc-set">
+              <path class="garc" d="M205 400 Q 300 195 435 262"/>
+              <path class="garc" d="M188 302 Q 330 176 452 352"/>
+              <path class="garc" d="M247 447 Q 372 330 442 218"/>
+              <path class="garc" d="M172 352 Q 305 258 468 408"/>
+            </g>
+            <!-- city nodes at each route endpoint -->
+            <g class="node-set">
+              <circle class="gnode" cx="205" cy="400" r="4"/>
+              <circle class="gnode" cx="435" cy="262" r="4.6"/>
+              <circle class="gnode" cx="188" cy="302" r="3.6"/>
+              <circle class="gnode" cx="452" cy="352" r="4.2"/>
+              <circle class="gnode" cx="247" cy="447" r="3.8"/>
+              <circle class="gnode" cx="442" cy="218" r="4.4"/>
+              <circle class="gnode" cx="172" cy="352" r="3.4"/>
+              <circle class="gnode" cx="468" cy="408" r="4"/>
+            </g>
+            <!-- orbit ring + satellite: the EarthLink logo mark, brought to life -->
+            <ellipse class="gorbit" cx="320" cy="320" rx="286" ry="106" transform="rotate(-24 320 320)"/>
+            <circle class="gsat" cx="580" cy="204" r="6"/>
+          </svg>
+
+          <!-- floating glass readouts (parallax depth + hover) -->
+          <div class="fpill fpill--a" data-depth="1.5">
+            <span class="fpill__dot"></span>
+            <div><b>940<em>Mbps</em></b><small>Live symmetrical speed</small></div>
+          </div>
+          <div class="fpill fpill--b" data-depth="0.85">
+            <span class="fpill__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></span>
+            <div><b>Fiber active</b><small>Whole-home Wi-Fi</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ DISCLOSURE STRIP ============================ -->
+  <div class="disclosure" role="note">
+    <div class="container">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <span><strong>Independent authorized retailer.</strong> This site is operated by Skyline&nbsp;Connect&nbsp;LLC, an authorized EarthLink retailer. We are not EarthLink&nbsp;LLC. &ldquo;EarthLink&rdquo; and the EarthLink logo are trademarks of their respective owner, used here under retailer authorization.</span>
+    </div>
+  </div>
+
+  <!-- ============================ MARQUEE / TRUST ============================ -->
+  <div class="marquee" aria-label="What's included">
+    <div class="marquee__track">
+      <!-- duplicated set for seamless loop -->
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 9-12h-7z"/></svg> Fiber up to 5 Gig</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M12 20h.01"/></svg> 5G Home Internet</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg> Nationwide satellite</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Unlimited data</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> No hidden fees</span>
+      <span class="marquee__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.07 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.13 1 .35 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> U.S.-based support</span>
+      <!-- duplicate -->
+      <span class="marquee__item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 9-12h-7z"/></svg> Fiber up to 5 Gig</span>
+      <span class="marquee__item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M12 20h.01"/></svg> 5G Home Internet</span>
+      <span class="marquee__item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg> Nationwide satellite</span>
+      <span class="marquee__item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Unlimited data</span>
+      <span class="marquee__item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> No hidden fees</span>
+      <span class="marquee__item" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.07 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.13 1 .35 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> U.S.-based support</span>
+    </div>
+  </div>
+
+  <!-- ============================ INTERNET / SERVICES (BENTO) ============================ -->
+  <section class="section" id="internet" aria-label="EarthLink internet options">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Ways to connect</span>
+        <h2 class="h-lg reveal-words" data-reveal-words>One provider, <span class="text-grad">three ways</span> to get online</h2>
+        <p class="lead">Whether you want the raw speed of fiber, the plug-and-play freedom of wireless, or coverage where the cables don&rsquo;t reach &mdash; there&rsquo;s an EarthLink connection that fits your home.</p>
+      </div>
+
+      <div class="bento">
+        <article class="card card--spot svc-span-3" data-reveal data-tilt-soft>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 9-12h-7z"/></svg></div>
+          <h3>EarthLink Fiber</h3>
+          <p>The gold standard for a busy, connected home. Fiber delivers <strong>symmetrical</strong> speeds &mdash; your uploads are as quick as your downloads &mdash; so video calls, cloud backups, and 4K streaming all stay smooth at once.</p>
+          <div class="card__meta">
+            <span class="pill">100 Mbps &ndash; 5 Gig</span>
+            <span class="pill">Unlimited data</span>
+            <span class="pill">Ultra-low latency</span>
+          </div>
+          <div class="card__foot">
+            <span class="price"><b>$39.95</b><span>/mo. to start*</span></span>
+            <a class="link-arrow" href="#plans">View fiber plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card card--spot svc-span-3" data-reveal data-reveal-delay="1" data-tilt-soft>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+          <h3>Wireless 5G Home Internet</h3>
+          <p>No technician, no waiting. We ship a wireless gateway to your door &mdash; set it near a window, plug it in, and you&rsquo;re usually online in about <strong>15 minutes</strong>. Tap into 5G and LTE wherever you have a signal, with <strong>no annual contract</strong>.</p>
+          <div class="card__meta">
+            <span class="pill">Self-install</span>
+            <span class="pill">No contract</span>
+            <span class="pill">Up to 425 Mbps</span>
+          </div>
+          <div class="card__foot">
+            <span class="price"><b>$59.95</b><span>/mo.*</span></span>
+            <a class="link-arrow" href="#check">Check my area <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card card--spot svc-span-2" data-reveal data-tilt-soft>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></div>
+          <h3>Satellite Internet</h3>
+          <p>Live beyond the reach of cable and fiber? Satellite keeps rural and remote homes connected for work, school, and streaming.</p>
+          <div class="card__meta"><span class="pill">Nationwide reach</span></div>
+        </article>
+
+        <article class="card card--spot svc-span-2" data-reveal data-reveal-delay="1" data-tilt-soft>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></div>
+          <h3>Private, ad-free email</h3>
+          <p>Keep a mailbox that&rsquo;s yours. EarthLink email is private by design &mdash; no ad targeting reading over your shoulder.</p>
+          <div class="card__meta"><span class="pill">Privacy-first</span></div>
+        </article>
+
+        <article class="card card--spot svc-span-2" data-reveal data-reveal-delay="2" data-tilt-soft>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Security &amp; protection</h3>
+          <p>Add identity monitoring, device protection, and expert tech help to keep the whole household safer online.</p>
+          <div class="card__meta"><span class="pill">Add-on</span></div>
+        </article>
+
+        <!-- wide dark feature -->
+        <article class="card card--dark" data-reveal data-tilt-soft>
+          <div>
+            <span class="speed-card__badge" style="background:rgba(245,139,33,.18);color:#ffc98a">Why fiber feels different</span>
+            <h3 style="margin:.9rem 0 .6rem">Speed you feel in every room</h3>
+            <p>Fiber isn&rsquo;t just a bigger number &mdash; it&rsquo;s a steadier, lower-latency line that doesn&rsquo;t buckle when the whole family logs on. Game, stream, back up, and video-call at the same time without the buffering spiral.</p>
+          </div>
+          <div class="mini-grid">
+            <div class="mini"><b>100%</b><span>Symmetrical up/down</span></div>
+            <div class="mini"><b>&lt; 10ms</b><span>Typical fiber latency</span></div>
+            <div class="mini"><b>Unlimited</b><span>No data caps or throttling</span></div>
+            <div class="mini"><b>1 line</b><span>Every device at once</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHY US ============================ -->
+  <section class="section" id="why" style="background:var(--bg-soft)" aria-label="Why order through us">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">The retailer difference</span>
+        <h2 class="h-lg reveal-words" data-reveal-words>Big-network internet, <span class="text-grad">small-town service</span></h2>
+        <p class="lead">You get EarthLink&rsquo;s nationwide network &mdash; ordered through people who actually pick up the phone and stick with you after the sale.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature" data-tilt-soft data-reveal>
+          <span class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <div><h4>Straight-talk pricing</h4><p>Clear monthly rates and terms confirmed before you order. No surprise line-items buried in the fine print.</p></div>
+        </div>
+        <div class="feature" data-tilt-soft data-reveal data-reveal-delay="1">
+          <span class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <div><h4>Real human help</h4><p>Friendly U.S.-based specialists help you pick the right plan and get set up &mdash; not an endless phone tree.</p></div>
+        </div>
+        <div class="feature" data-tilt-soft data-reveal data-reveal-delay="2">
+          <span class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>
+          <div><h4>Availability, decoded</h4><p>We check what&rsquo;s actually live at your address &mdash; fiber, wireless, or satellite &mdash; and match you to the best fit.</p></div>
+        </div>
+        <div class="feature" data-tilt-soft data-reveal>
+          <span class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg></span>
+          <div><h4>Nationwide footprint</h4><p>EarthLink reaches around 96% of the country, so there&rsquo;s a strong chance we can connect your home too.</p></div>
+        </div>
+        <div class="feature" data-tilt-soft data-reveal data-reveal-delay="1">
+          <span class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div><h4>Unlimited on fiber</h4><p>Fiber plans come with unlimited data and no overage games &mdash; stream and work as much as you like.</p></div>
+        </div>
+        <div class="feature" data-tilt-soft data-reveal data-reveal-delay="2">
+          <span class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+          <div><h4>Privacy you can trust</h4><p>EarthLink doesn&rsquo;t sell your web activity, and add-on tools help protect your identity and devices.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PLANS ============================ -->
+  <section class="section" id="plans" aria-label="EarthLink fiber plans and pricing">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Fiber plans</span>
+        <h2 class="h-lg reveal-words" data-reveal-words>Pick a speed, <span class="text-grad">keep it simple</span></h2>
+        <p class="lead">Every fiber plan is symmetrical and unlimited. Choose the lane that matches your household &mdash; you can always move up later.</p>
+      </div>
+
+      <div class="plans">
+        <article class="plan" data-reveal data-tilt-soft>
+          <div class="plan__name">Fiber 100</div>
+          <div class="plan__desc">Great for browsing, HD streaming, and a few devices.</div>
+          <div class="plan__price"><em>$</em><b>39.95</b><span>/mo.*</span></div>
+          <div class="plan__speed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 9-12h-7z"/></svg> 100 Mbps up &amp; down</div>
+          <ul class="plan__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Unlimited data</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Symmetrical speeds</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Private email included</li>
+          </ul>
+          <a class="btn btn--ghost btn--block" href="#check" data-magnetic>Choose Fiber 100</a>
+        </article>
+
+        <article class="plan plan--featured" data-reveal data-reveal-delay="1" data-tilt-soft>
+          <span class="plan__flag">Most popular</span>
+          <div class="plan__name">Fiber 1 Gig</div>
+          <div class="plan__desc">The sweet spot for busy homes, gamers, and remote work.</div>
+          <div class="plan__price"><em>$</em><b>79.95</b><span>/mo.*</span></div>
+          <div class="plan__speed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 9-12h-7z"/></svg> 1,000 Mbps up &amp; down</div>
+          <ul class="plan__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Unlimited data</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Dozens of devices at once</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Whole-home Wi-Fi ready</li>
+          </ul>
+          <a class="btn btn--block" href="#check" data-magnetic>Choose Fiber 1 Gig</a>
+        </article>
+
+        <article class="plan" data-reveal data-reveal-delay="2" data-tilt-soft>
+          <div class="plan__name">Fiber 5 Gig</div>
+          <div class="plan__desc">Maximum headroom for creators, big families &amp; smart homes.</div>
+          <div class="plan__price"><em>$</em><b>149.95</b><span>/mo.*</span></div>
+          <div class="plan__speed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13 2-9 12h7l-1 8 9-12h-7z"/></svg> 5,000 Mbps up &amp; down</div>
+          <ul class="plan__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Unlimited data</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Multi-gig future-proof</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Priority setup support</li>
+          </ul>
+          <a class="btn btn--ghost btn--block" href="#check" data-magnetic>Choose Fiber 5 Gig</a>
+        </article>
+      </div>
+      <p class="form-note" data-reveal>* Prices shown are typical starting rates and may not include taxes, equipment, or fees. Plans, speeds, pricing, and availability vary by service address and are subject to change. Fiber and Satellite may require a 12-month term agreement. We&rsquo;ll confirm the exact offer for your address before you order.</p>
+    </div>
+  </section>
+
+  <!-- ============================ HOW IT WORKS ============================ -->
+  <section class="section" id="how" style="background:var(--bg-soft)" aria-label="How ordering works">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">How it works</span>
+        <h2 class="h-lg reveal-words" data-reveal-words>Connected in <span class="text-grad">three easy steps</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step" data-reveal data-tilt-soft>
+          <div class="step__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="step__num"></div>
+          <h4>Check your address</h4>
+          <p>Tell us where you live and we&rsquo;ll show which EarthLink connections &mdash; fiber, wireless, or satellite &mdash; are available there.</p>
+        </div>
+        <div class="step" data-reveal data-reveal-delay="1" data-tilt-soft>
+          <div class="step__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <div class="step__num"></div>
+          <h4>Pick your plan</h4>
+          <p>A specialist helps you compare speeds and pricing, then locks in the plan that fits your home and budget.</p>
+        </div>
+        <div class="step" data-reveal data-reveal-delay="2" data-tilt-soft>
+          <div class="step__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg></div>
+          <div class="step__num"></div>
+          <h4>Get online fast</h4>
+          <p>Self-install your wireless gateway in minutes, or book a fiber install. Then enjoy the connection &mdash; we&rsquo;re here if you need us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SECURITY / SPLIT ============================ -->
+  <section class="section" aria-label="Security and extras">
+    <div class="container split">
+      <div data-reveal>
+        <span class="eyebrow">Beyond the connection</span>
+        <h2 class="h-lg reveal-words" data-reveal-words style="margin:.8rem 0 1rem">A safer, smarter home network</h2>
+        <p class="lead">Great internet is the start. Layer on protection and support that keep every device &mdash; and every person &mdash; in your home a little safer.</p>
+        <ul class="checklist">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Identity &amp; credit monitoring add-ons to catch fraud early</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Device protection and antivirus for laptops, phones &amp; tablets</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> On-demand tech experts for setup, slowdowns &amp; smart devices</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Private, ad-free email that doesn&rsquo;t mine your inbox</li>
+        </ul>
+        <div class="hero-cta"><a class="btn" href="#check" data-magnetic>Talk to a specialist</a></div>
+      </div>
+
+      <!-- Custom vector "AI-style" network illustration -->
+      <div class="art-panel" data-reveal data-tilt>
+        <div class="art-panel__glow"></div>
+        <svg viewBox="0 0 480 380" width="100%" role="img" aria-label="Illustration of a protected home network" style="position:relative">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffb454"/><stop offset="1" stop-color="#e2760f"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#ffd8a6" stop-opacity=".4"/>
+            </linearGradient>
+            <radialGradient id="g3"><stop offset="0" stop-color="#f58b21" stop-opacity=".5"/><stop offset="1" stop-color="#f58b21" stop-opacity="0"/></radialGradient>
+          </defs>
+          <circle cx="240" cy="190" r="150" fill="url(#g3)"/>
+          <!-- orbit rings -->
+          <g fill="none" stroke="#ffffff" stroke-opacity=".18" stroke-width="1.4">
+            <ellipse cx="240" cy="190" rx="150" ry="70" transform="rotate(-18 240 190)"/>
+            <ellipse cx="240" cy="190" rx="110" ry="150" transform="rotate(-18 240 190)"/>
+          </g>
+          <!-- shield core -->
+          <g class="art-float">
+            <path d="M240 108l70 26v52c0 46-38 70-70 82-32-12-70-36-70-82v-52z" fill="url(#g1)"/>
+            <path d="M212 190l20 20 40-42" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <!-- nodes -->
+          <g fill="url(#g2)">
+            <circle cx="96" cy="120" r="16"/><circle cx="392" cy="120" r="13"/>
+            <circle cx="110" cy="286" r="12"/><circle cx="372" cy="292" r="17"/>
+          </g>
+          <g stroke="#ffffff" stroke-opacity=".35" stroke-width="1.6" stroke-dasharray="4 6">
+            <line x1="112" y1="126" x2="196" y2="176"/>
+            <line x1="379" y1="126" x2="286" y2="172"/>
+            <line x1="120" y1="280" x2="196" y2="230"/>
+            <line x1="356" y1="286" x2="286" y2="232"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CHECK AVAILABILITY / LEAD FORM ============================ -->
+  <section class="section" id="check" aria-label="Check availability">
+    <div class="container split">
+      <div data-reveal>
+        <span class="eyebrow">Check availability</span>
+        <h2 class="h-lg reveal-words" data-reveal-words style="margin:.8rem 0 1rem">See what&rsquo;s live at <span class="text-grad">your address</span></h2>
+        <p class="lead">Share a few details and an authorized EarthLink specialist will confirm the fastest options for your home &mdash; usually the same day.</p>
+        <ul class="checklist" style="margin-top:1.4rem">
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> No obligation &mdash; just a clear, honest quote</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Fiber, wireless &amp; satellite compared side by side</li>
+          <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Prefer to talk now? Call <a href="tel:+18555550100" style="color:var(--o-600);font-weight:700">(855) 555-0100</a></li>
+        </ul>
+      </div>
+
+      <div class="lead-card" data-reveal data-reveal-delay="1">
+        <form id="leadForm" novalidate>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Jordan Rivera" required />
+          </div>
+          <div class="field">
+            <label for="addr">Service address or ZIP</label>
+            <input id="addr" name="address" type="text" autocomplete="postal-code" placeholder="123 Main St, 30301" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(555) 012-3456" required />
+          </div>
+          <div class="field">
+            <label for="interest">I&rsquo;m interested in</label>
+            <select id="interest" name="interest">
+              <option>Fiber internet</option>
+              <option>Wireless 5G Home Internet</option>
+              <option>Satellite internet</option>
+              <option>Not sure — help me choose</option>
+            </select>
+          </div>
+
+          <!-- TCPA express consent -->
+          <label class="consent">
+            <input type="checkbox" id="consent" name="consent" required />
+            <span>By checking this box and submitting, I agree that Skyline&nbsp;Connect&nbsp;LLC and its authorized partners may contact me at the number provided &mdash; including by autodialed calls and texts &mdash; about EarthLink products and offers. Consent is not a condition of purchase; message &amp; data rates may apply. See our <a href="legal/tcpa.html">TCPA Policy</a> and <a href="legal/privacy.html">Privacy&nbsp;Policy</a>.</span>
+          </label>
+
+          <button class="btn btn--block btn--lg" type="submit" data-magnetic>
+            Check availability
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form-note" id="formNote">We respect your inbox and your time. Your details are used only to prepare your quote.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FAQ ============================ -->
+  <section class="section" id="faq" style="background:var(--bg-soft)" aria-label="Frequently asked questions">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Good to know</span>
+        <h2 class="h-lg reveal-words" data-reveal-words>Questions, <span class="text-grad">answered</span></h2>
+      </div>
+      <div class="faq">
+        <details class="faq-item" data-reveal open>
+          <summary>Is this the official EarthLink website?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="faq-body"><p>No. Skyline&nbsp;Connect&nbsp;LLC is an independent, authorized retailer of EarthLink internet services. We help you compare and order EarthLink plans, while EarthLink&nbsp;LLC owns the brand and operates the underlying network.</p></div>
+        </details>
+        <details class="faq-item" data-reveal>
+          <summary>What can I order through you?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="faq-body"><p>EarthLink Fiber (100&nbsp;Mbps to 5&nbsp;Gig, symmetrical), Wireless 5G and fixed-wireless Home Internet, and Satellite internet for rural or hard-to-reach homes. What&rsquo;s available depends on your service address, which we&rsquo;ll check for you.</p></div>
+        </details>
+        <details class="faq-item" data-reveal>
+          <summary>Does EarthLink Fiber have data caps?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="faq-body"><p>Fiber plans include unlimited data with no overage fees. Wireless Home Internet plans include a monthly data allowance that varies by plan &mdash; we&rsquo;ll walk you through the details before you order.</p></div>
+        </details>
+        <details class="faq-item" data-reveal>
+          <summary>How quickly can I get connected?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="faq-body"><p>Wireless Home Internet self-installs in roughly 15&nbsp;minutes &mdash; place the gateway near a window and plug it in. Fiber usually needs a professional installation appointment. Exact timing depends on your address and product.</p></div>
+        </details>
+        <details class="faq-item" data-reveal>
+          <summary>Is there a contract?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="faq-body"><p>Fiber and Satellite generally use a 12-month term agreement, while Wireless Home Internet is offered with no annual contract. We confirm all terms with you up front &mdash; no surprises.</p></div>
+        </details>
+        <details class="faq-item" data-reveal>
+          <summary>How do you protect my information?<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="faq-body"><p>We only use the details you share to prepare your quote and process your order, handled over secure, PCI&nbsp;DSS-aligned systems. Read our <a href="legal/privacy.html">Privacy&nbsp;Policy</a> and <a href="legal/pci-dss.html">PCI&nbsp;DSS</a> statement for specifics.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ CTA BAND ============================ -->
+  <section class="section" aria-label="Get started">
+    <div class="container">
+      <div class="cta-band" data-reveal data-tilt-soft>
+        <div class="cta-band__deco"></div>
+        <svg class="cta-orbit" viewBox="0 0 200 200" aria-hidden="true">
+          <ellipse cx="100" cy="100" rx="88" ry="34" transform="rotate(-24 100 100)" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+          <circle cx="152" cy="63" r="8" fill="#ffffff" opacity=".9"/>
+        </svg>
+        <span class="eyebrow" style="color:#fff;justify-content:center">Let&rsquo;s get you online</span>
+        <h2 class="h-lg reveal-words" data-reveal-words style="margin-top:.8rem">Faster internet is one quick call away</h2>
+        <p>Check your address in seconds, or talk to a friendly authorized specialist who&rsquo;ll match you to the right EarthLink plan.</p>
+        <div class="hero-cta">
+          <a class="btn btn--dark btn--lg" href="#check" data-magnetic>Check availability</a>
+          <a class="btn btn--ghost btn--lg" href="tel:+18555550100">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.07 4.18 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.72c.13 1 .35 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (855) 555-0100
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg class="brand__logo" viewBox="0 0 232 40" role="img" aria-label="EarthLink" style="height:34px">
+          <g fill="none" stroke="#f58b21" stroke-width="3.4" stroke-linecap="round">
+            <ellipse cx="20" cy="20" rx="17" ry="8.5" transform="rotate(-24 20 20)"/>
+          </g>
+          <circle cx="31.5" cy="12" r="4.4" fill="#f58b21"/>
+          <text x="46" y="28" font-family="Montserrat, sans-serif" font-size="24" font-weight="800" letter-spacing="-0.5" fill="#ffffff">EarthLink</text>
+        </svg>
+        <p>Skyline&nbsp;Connect&nbsp;LLC &mdash; your local authorized EarthLink retailer for fiber, wireless, and satellite home internet.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#internet">Internet</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#why">Why us</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Get connected</h5>
+        <ul>
+          <li><a href="#check">Check availability</a></li>
+          <li><a href="#plans">Plans &amp; pricing</a></li>
+          <li><a href="tel:+18555550100">Call (855) 555-0100</a></li>
+          <li><a href="mailto:hello@skyline-connect.example">Email us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Policies</h5>
+        <ul>
+          <li><a href="legal/privacy.html">Privacy &amp; Data Protection</a></li>
+          <li><a href="legal/disclaimer.html">Disclaimer</a></li>
+          <li><a href="legal/cookies.html">Cookies Policy</a></li>
+          <li><a href="legal/tcpa.html">TCPA Policy</a></li>
+          <li><a href="legal/trademarks.html">Trademarks</a></li>
+          <li><a href="legal/marketing.html">Marketing Policy</a></li>
+          <li><a href="legal/service-fulfillment.html">Service Fulfillment</a></li>
+          <li><a href="legal/pci-dss.html">PCI DSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-legal">
+    <div class="container">
+      <div class="footer-policies">
+        <a href="legal/privacy.html">Privacy &amp; Data Protection</a>
+        <a href="legal/disclaimer.html">Disclaimer</a>
+        <a href="legal/cookies.html">Cookies Policy</a>
+        <a href="legal/tcpa.html">TCPA Policy</a>
+        <a href="legal/trademarks.html">Trademarks</a>
+        <a href="legal/marketing.html">Marketing Policy</a>
+        <a href="legal/service-fulfillment.html">Service Fulfillment</a>
+        <a href="legal/pci-dss.html">PCI DSS</a>
+      </div>
+      <div class="footer-fine">
+        <p><strong>Authorized Retailer Disclosure.</strong> This website is owned and operated by Skyline&nbsp;Connect&nbsp;LLC, an independent authorized retailer of EarthLink services. We are not EarthLink&nbsp;LLC, and this is not the official EarthLink website. All sales are subject to EarthLink&rsquo;s terms, pricing, and availability at your service address.</p>
+        <p><strong>Trademarks.</strong> &ldquo;EarthLink&rdquo; and the EarthLink logo are trademarks or registered trademarks of their respective owner and are used here under retailer authorization for the purpose of identifying the services offered. All other marks belong to their respective owners. See our <a href="legal/trademarks.html">Trademarks</a> page.</p>
+        <p><strong>Offer details.</strong> Prices, speeds, data allowances, and availability vary by address and are subject to change without notice. Advertised speeds are &ldquo;up to&rdquo; and not guaranteed; actual performance depends on your plan, equipment, and network conditions. Taxes, fees, and equipment charges may apply. Fiber and Satellite may require a 12-month term agreement.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Skyline&nbsp;Connect&nbsp;LLC. All rights reserved.</span>
+        <span>Authorized EarthLink&reg; Retailer &middot; Made for U.S. households</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</a>
+
+<!-- Animation libraries: deferred so they never block first paint (progressive enhancement) -->
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+<script defer src="assets/js/main.js"></script>

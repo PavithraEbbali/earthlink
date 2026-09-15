@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+next-env.d.ts
+
+# Vercel
+.vercel
+
+# Environment
+.env
+.env*.local
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Full-size image originals (~40MB). Not needed to build or deploy — the web
+# derivatives in public/assets/img are committed. Keep a separate backup of
+# these; regenerate derivatives with: node scripts/process-images.mjs
+source-images/

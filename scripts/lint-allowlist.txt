@@ -1,0 +1,7 @@
+# Exact full strings this build mandates, exempt from the banned-phrase matcher.
+# Exact-match only: editing an entry puts it back in scope.
+# Every entry must cite the rule that mandates it. Never a hole-punch for new copy.
+
+# Approved differentiation claim. Listed so the close-variant matcher does not
+# catch it under the "no pressure, no runaround" family.
+No obligation to order — call, compare, decide.
