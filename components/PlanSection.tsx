@@ -42,12 +42,17 @@ export default function PlanSection({ section }: { section: ServiceSection }) {
             sizes="100vw"
           />
           {/*
-            This photograph is bright and high-key — a blown-out window on one
-            side, pale wood on the other. The section's body copy is dark, so it
-            needs a light wash to hold contrast. Without it the heading lands on
-            near-white pixels and stops being readable.
+            The wash is graded rather than flat. It is heaviest at the top, where
+            the heading and intro sit over the most variable part of the frame —
+            a blown-out window on one side, dark curtain on the other — and eases
+            lower down, where the content is white cards that need no help. A flat
+            82% wash measured fine on average but left the intro unreadable across
+            the bright patches.
           */}
-          <div aria-hidden="true" className="absolute inset-0 bg-white/82" />
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/88 to-white/75"
+          />
         </>
       )}
 
@@ -57,6 +62,7 @@ export default function PlanSection({ section }: { section: ServiceSection }) {
             eyebrow={section.eyebrow}
             heading={section.heading}
             intro={section.intro}
+            tone={asBackground ? 'onImage' : 'light'}
           />
         </Reveal>
 

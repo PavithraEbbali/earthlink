@@ -200,6 +200,15 @@ export function Picture({
 /*  Section scaffolding                                                        */
 /* -------------------------------------------------------------------------- */
 
+/**
+ * tone:
+ *   'light'   — dark text on a plain light section
+ *   'dark'    — light text on a dark section
+ *   'onImage' — dark text over a photograph. Body copy darkens to full ink and
+ *               gains weight, because a photo's local brightness varies far more
+ *               than a flat fill and mid-grey stops being legible over the bright
+ *               patches even when the average contrast looks acceptable.
+ */
 export function SectionHeading({
   eyebrow,
   heading,
@@ -209,8 +218,9 @@ export function SectionHeading({
   eyebrow: string;
   heading: string;
   intro?: string;
-  tone?: 'light' | 'dark';
+  tone?: 'light' | 'dark' | 'onImage';
 }) {
+  const isDark = tone === 'dark';
   return (
     <div className="mx-auto max-w-3xl text-center">
       {/* orange-800, not 600: at 12px this counts as normal text and needs 4.5:1.
@@ -233,7 +243,11 @@ export function SectionHeading({
       {intro && (
         <p
           className={`mt-4 text-base leading-relaxed ${
-            tone === 'dark' ? 'text-white/75' : 'text-charcoal'
+            isDark
+              ? 'text-white/75'
+              : tone === 'onImage'
+                ? 'font-medium text-ink'
+                : 'text-charcoal'
           }`}
         >
           {intro}
